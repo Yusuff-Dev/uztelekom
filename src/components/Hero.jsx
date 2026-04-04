@@ -14,9 +14,9 @@ export default function Hero() {
         <button className="border border-[#BFC2C6] py-4 px-8 font-bold rounded-xl cursor-pointer ">Batafsil</button>
         </div>
       </div>
-      <div className="relative ">
+      <div className="relative">
         <img src={heroImg} alt="img" />
-        <button className="absolute z-10  py-3 px-11 text-2xl font-bold text-white rounded-xl bg-[#174880] -top-5 left-89">1С UZTELECOM</button>
+        <button className="absolute z-10  py-3 px-11 text-2xl font-bold text-white rounded-xl bg-[#174880] -top-5 left-89">1C UZTELECOM</button>
         <img src={heroImg1} alt="statistic"  className="absolute z-10 -bottom-4 -left-3"/>
         <img src={heroImg2} alt="frame" className="absolute z-10 -bottom-15  -right-4"/>
       </div>
