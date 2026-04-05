@@ -21,7 +21,7 @@ export default function Features() {
   ];
 
   return (
-    <div className="container mt-20 md:mt-24 lg:mt-31 px-4">
+    <div className="container mt-5! mb-30 md:mt-24 lg:mt-31 px-4">
       <h2 className="text-[36px] md:text-[42px] lg:text-[48px] font-bold w-full text-center">
         UZTELECOMdan 1C xizmatining <br />afzalliklari
       </h2>

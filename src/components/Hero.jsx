@@ -5,7 +5,7 @@ import heroImg2 from "../assets/FrameSt.png";
 
 export default function Hero() {
   return (
-    <div className="container flex mt-12 justify-evenly">
+    <div className="container flex mt-12 mb-28! justify-evenly">
       <div className="">
         <h1 className="text-5xl max-w-100 font-bold">UZTELECOMdan 1C bulutli xizmati</h1>
         <p className="text-[#383A3D] text-[24px] max-w-110 mt-8 mb-12">Buxgalteriya hisobini yuriting, savdo va xizmatlaringizni dunyoning istalgan nuqtasidan boshqaring.</p>
