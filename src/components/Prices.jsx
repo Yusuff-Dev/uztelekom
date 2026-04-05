@@ -4,7 +4,7 @@ export default function Prices() {
   return (
     <section>
         <div className="container">
-          <div>
+          <div className="px-5">
             <div className="flex items-center gap-3"> 
               <p className="text-sm font-medium">Oylik</p>
               <div className="w-10 h-5 bg-[#A1A5AA] rounded-2xl flex items-center ">
@@ -16,7 +16,7 @@ export default function Prices() {
               </div>
             </div>
 
-            <div className="grid grid-cols-3 mt-10">
+            <div className="grid md:grid-cols-3 grid-cols-2 mt-10 gap-5">
               <Tarif name={'Bazaviy'} monthly={'200 000'} />
               <Tarif name={'Standart'} monthly={'360 000'} />
               <Tarif name={'PROFI'} monthly={'460 000'} />

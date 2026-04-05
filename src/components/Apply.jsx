@@ -1,5 +1,4 @@
 import { useState } from "react"
-import Button from "../UI/Button"
 
 export default function Apply() {
   const [selected, setSelected] = useState('1')
@@ -9,7 +8,7 @@ export default function Apply() {
   return (
     <section onSubmit={handleSubmit}>
       <div className="container">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center px-5">
           <h1 className="text-3xl font-bold text-[#18191B]">
             Ariza yuborish
           </h1>
