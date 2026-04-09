@@ -1,7 +1,7 @@
 export default function Button({variant, children, className}) {
   if(variant === 'primary') {
     return (
-      <button className={`bg-[#174880] text-white px-4 py-2 rounded-lg hover:bg-[#0f3a6a] cursor-pointer ${className}`}>
+      <button className={`bg-[#174880] dark:bg-[#206CE8] border border-[#174880] text-white px-4 py-2 rounded-lg hover:bg-[#0f3a6a] cursor-pointer ${className}`}>
         {children}
       </button>
     )
@@ -13,7 +13,7 @@ export default function Button({variant, children, className}) {
     )
   } else {
     return (
-      <button className="bg-green-500 text-white px-4 py-2 rounded">
+      <button className="bg-blue-700 text-white px-4 py-2 rounded">
         {children}
       </button>
     )
