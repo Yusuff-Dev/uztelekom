@@ -1,15 +1,12 @@
-import Logo from '../assets/Uztelecom.svg'
+import Logo from "./Logo";
 
 export default function Footer() {
   return (
     <footer className='bg-[#E9ECEF]'>
-      <div className="container px-30!">
-
+      <div className="container">
         <div className='flex items-center gap-30 mt-20'>
           <div>
-            <img src={Logo} alt="logo" />
-            <p className='text-[16px] font-medium text-[#65696F]'> +998 55 500 09 90</p>
-            <a href="https://www.youtube.com/watch?v=oYVgmoJl8zQ&list=RDoYVgmoJl8zQ&start_radio=1" className='text-[16px] font-medium text-[#65696F]'>1c@uztelecom.uz</a>
+           <Logo/>
           </div>
           <div className='flex gap-30'>
           <div className='flex flex-col gap-3'>

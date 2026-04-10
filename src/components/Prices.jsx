@@ -16,7 +16,7 @@ export default function Prices() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-3 grid-cols-2 mt-10 gap-5">
+            <div className="grid md:grid-cols-3 sm:grid-cols-2 mt-10 gap-5">
               <Tarif name={'Bazaviy'} monthly={'200 000'} />
               <Tarif name={'Standart'} monthly={'360 000'} />
               <Tarif name={'PROFI'} monthly={'460 000'} />

@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
 .container{
     @apply mx-auto px-4;
+}
+
+@theme {
+    --color-blue-950: #161F2C;
 }

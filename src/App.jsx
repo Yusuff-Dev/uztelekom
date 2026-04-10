@@ -9,6 +9,7 @@ export default function App() {
     <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="*" element={<h1>404 Not Found</h1>} />
     </Routes>
     <Footer />
     </div>
