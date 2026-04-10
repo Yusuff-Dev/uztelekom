@@ -8,7 +8,6 @@ export default function Hero() {
     <section className="container mx-auto px-4 mt-12 mb-16">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
         
-        {/* LEFT */}
         <div className="max-w-xl text-center lg:text-left">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
             UZTELECOMdan <br /> 1C bulutli xizmati
@@ -28,23 +27,19 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* RIGHT */}
         <div className="relative w-full max-w-[420px]">
           <img src={heroImg} alt="hero" className="w-full rounded-xl" />
 
-          {/* TOP BADGE */}
           <div className="absolute top-3 right-3 bg-[#174880] text-white text-xs sm:text-sm px-4 py-1 rounded-md">
             1C UZTELECOM
           </div>
 
-          {/* GRAPH */}
           <img
             src={heroImg1}
             alt="stat"
             className="absolute -bottom-6 left-0 w-28 sm:w-36"
           />
 
-          {/* STATS */}
           <img
             src={heroImg2}
             alt="frame"
