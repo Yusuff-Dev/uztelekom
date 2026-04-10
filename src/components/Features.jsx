@@ -26,7 +26,7 @@ export default function Features() {
         UZTELECOMdan 1C xizmatining <br />afzalliklari
       </h2>
 
-      <div className="flex flex-col lg:flex-row justify-center lg:justify-evenly items-center mt-12 lg:mt-20 gap-10 lg:gap-0">
+      <div className="flex flex-col lg:flex-row justify-center lg:justify-evenly items-center mt-12 lg:mt-20 gap-10 lg:gap-5">
         <div className="flex flex-col  gap-6 w-full lg:w-1/2">
           {data.map((item, index) => (
             <div
