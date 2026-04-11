@@ -21,23 +21,24 @@ export default function Features() {
   ];
 
   return (
-    <div className="container mt-5! mb-30 md:mt-24 lg:mt-31 px-4">
-      <h2 className="text-[36px] md:text-[42px] lg:text-[48px] font-bold w-full text-center">
+   <div className="dark:bg-[#0E131E] pb-4 pt-5">
+     <div className="container mt-5! mb-30 md:mt-24 lg:mt-31 px-4 ">
+      <h2 className="text-[36px] md:text-[42px] lg:text-[48px] font-bold w-full text-center dark:text-white ">
         UZTELECOMdan 1C xizmatining <br />afzalliklari
       </h2>
 
-      <div className="flex flex-col lg:flex-row justify-center lg:justify-evenly items-center mt-12 lg:mt-20 gap-10 lg:gap-0">
-        <div className="flex flex-col  gap-6 w-full lg:w-1/2">
+      <div className="flex flex-col lg:flex-row justify-center lg:justify-evenly items-center mt-12 lg:mt-20 gap-10 lg:gap-5">
+        <div className="flex flex-col  gap-6  lg:w-1/2  ">
           {data.map((item, index) => (
             <div
               key={index}
-              className="p-5 rounded-xl max-w-140  border border-blue-400/60 shadow-md transition duration-300 hover:shadow-xl hover:-translate-y-2"
+              className="p-5 rounded-xl  max-w-140   dark:hover:shadow-[#206CE8]  transition duration-300 hover:shadow-xl dark:hover:border-[#206CE8] hover:border border-[#174880] hover:-translate-y-2"
             >
-              <h3 className="font-bold text-gray-800 text-xl md:text-2xl">
+              <h3 className="font-bold text-gray-800 text-xl md:text-2xl dark:text-white">
                 {item.title}
               </h3>
 
-              <p className="text-gray-500 mt-2 text-sm md:text-base">
+              <p className="text-gray-500 dark:text-[#9EA2A8] mt-2 text-sm md:text-base">
                 {item.desc}
               </p>
             </div>
@@ -49,5 +50,6 @@ export default function Features() {
         </div>
       </div>
     </div>
+   </div>
   );
 }
