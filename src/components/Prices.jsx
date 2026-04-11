@@ -1,8 +1,17 @@
 import Tarif from "./Tarif";
+import { motion } from "framer-motion";
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
 export default function Prices() {
+  const { animateWhileInView } = useContext(ThemeContext);
+  const data = [
+    { id: 1, name: "Bazaviy", monthly: "200 000" },
+    { id: 2, name: "Standart", monthly: "360 000" },
+    { id: 3, name: "PROFI", monthly: "460 000" }
+  ]
   return (
-    <section>
+    <section className="py-25">
         <div className="container">
           <div className="px-5">
             <div className="flex items-center gap-3"> 
@@ -16,10 +25,14 @@ export default function Prices() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-3 sm:grid-cols-2 mt-10 gap-5">
-              <Tarif name={'Bazaviy'} monthly={'200 000'} />
-              <Tarif name={'Standart'} monthly={'360 000'} />
-              <Tarif name={'PROFI'} monthly={'460 000'} />
+            <div 
+              className="grid md:grid-cols-3 sm:grid-cols-2 mt-10 gap-5"
+            >
+              {data.map((item) => (
+                <motion.div key={item.id} className="w-full" {...animateWhileInView(30, 0, item.id * 0.2, 0.5, 1)}>
+                  <Tarif name={item.name} monthly={item.monthly} />
+                </motion.div>
+              ))}
             </div>
           </div>
         </div>
