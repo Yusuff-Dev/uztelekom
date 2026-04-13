@@ -1,6 +1,18 @@
 import QuestionBar from "./QuestionBar";
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
 export default function Questions() {
+  const { animateWhileInView } = useContext(ThemeContext);
+
+  const questions = [
+    { id: 1, question: "Brauzerda ishlash" },
+    { id: 2, question: "Internet sekin bo‘lsa ham ishlash mumkinmi?" },
+    { id: 3, question: "Uyda yoki ta’tilda ishlash mumkinmi?" },
+    { id: 4, question: "Ma’lumotlarim yo‘qolmasligiga ishonchim komil bo‘lishi mumkinmi?" },
+    { id: 5, question: "Xizmatdagi ilovalarni kim yangilaydi?" }
+  ];
+
   return (
     <section className="py-31.5 dark:bg-[#0E131E]">
       <div className="container">
@@ -13,21 +25,13 @@ export default function Questions() {
             </p>
           </div>
           <div className="flex flex-col gap-5 items-center">
-            <QuestionBar>
-              Brauzerda ishlash
-            </QuestionBar>
-            <QuestionBar>
-              Internet sekin bo‘lsa ham ishlash mumkinmi?
-            </QuestionBar>
-            <QuestionBar>
-              Uyda yoki ta’tilda ishlash mumkinmi?
-            </QuestionBar>
-            <QuestionBar>
-              Ma’lumotlarim yo‘qolmasligiga ishonchim komil bo‘lishi mumkinmi?
-            </QuestionBar>
-            <QuestionBar>
-              Xizmatdagi ilovalarni kim yangilaydi?
-            </QuestionBar>
+            {
+              questions.map((item) => (
+                <QuestionBar key={item.id} id={item.id}>
+                  {item.question}
+                </QuestionBar>
+              ))
+            }
           </div>
         </div>
       </div>
