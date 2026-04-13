@@ -11,9 +11,9 @@ export default function QuestionBar({ children }) {
     return (
         <div className="border border-[#BFC2C6] rounded-lg w-full">
             <div className="flex items-center gap-5 max-w-171 justify-between ">
-            <div className="px-4 flex items-center gap-4 text-xl font-bold text-[#18191B] py-6">
+            <div className="px-4 flex items-center gap-4 text-xl font-bold text-[#18191B] py-6 dark:text-white">
                 <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="4" height="16" rx="2" fill="#174880" />
+                    <rect width="4" height="16" rx="2" fill="#174880" className="dark:fill-[#206CE8]"/>
                 </svg>
                 {children}
             </div>
@@ -26,7 +26,7 @@ export default function QuestionBar({ children }) {
         </div>
 
         <div className={`overflow-hidden transition-all ease-in-out duration-500 ${isOpen ? "max-h-40 max-w-171" : "max-h-0 max-w-171"}`}>
-            <p className="text-[16px] mt-5 p-5">1C UZTELECOM xizmati sizning buxgalteriya hisobotlaringizni qanday soddalashtirishi va biznesingizni qanday samaraliroq qilishini bilib oling.</p>
+            <p className="text-[16px] mt-5 p-5 dark:text-white">1C UZTELECOM xizmati sizning buxgalteriya hisobotlaringizni qanday soddalashtirishi va biznesingizni qanday samaraliroq qilishini bilib oling.</p>
         </div>
         </div>
     )

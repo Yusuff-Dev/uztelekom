@@ -2,13 +2,15 @@ import QuestionBar from "./QuestionBar";
 
 export default function Questions() {
   return (
-    <section className="mt-31.5">
+    <section className="py-31.5 dark:bg-[#0E131E]">
       <div className="container">
         <div className="flex items-start justify-between gap-10">
           <div className="max-w-118 flex flex-col gap-5">
-            <p>FAQ</p>
-            <h1 className="text-5xl font-bold">Ko'p so'raladigan savollar</h1>
-            <p className="text-[16px] text-[#4D5055]">1C UZTELECOM xizmati sizning buxgalteriya hisobotlaringizni qanday soddalashtirishi va biznesingizni qanday samaraliroq qilishini bilib oling.</p>
+            <p className="dark:text-[#9EA2A8]">FAQ</p>
+            <h1 className="text-5xl font-bold dark:text-white">Ko'p so'raladigan savollar</h1>
+            <p className="text-[16px] text-[#4D5055] dark:text-[#9EA2A8]">
+              1C UZTELECOM xizmati sizning buxgalteriya hisobotlaringizni qanday soddalashtirishi va biznesingizni qanday samaraliroq qilishini bilib oling.
+            </p>
           </div>
           <div className="flex flex-col gap-5 items-center">
             <QuestionBar>
