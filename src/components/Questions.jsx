@@ -19,7 +19,7 @@ export default function Questions() {
         <div className="flex items-start justify-between gap-10">
           <div className="max-w-118 flex flex-col gap-5">
             <p className="dark:text-[#9EA2A8]">FAQ</p>
-            <h1 className="text-5xl font-bold dark:text-white">Ko'p so'raladigan savollar</h1>
+            <h2 className="text-5xl font-bold dark:text-white">Ko'p so'raladigan savollar</h2>
             <p className="text-[16px] text-[#4D5055] dark:text-[#9EA2A8]">
               1C UZTELECOM xizmati sizning buxgalteriya hisobotlaringizni qanday soddalashtirishi va biznesingizni qanday samaraliroq qilishini bilib oling.
             </p>
